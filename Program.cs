@@ -4,7 +4,14 @@
     {
         Console.Clear();
 
-        Start(6);
+        Menu();
+    }
+
+    static void Menu(){
+        Console.WriteLine("S = Segundo");
+        Console.WriteLine("M = Minuto");
+        Console.WriteLine("0 = Sair");
+        Console.WriteLine("Quanto tempo deseja conttar? ");
     }
 
     static void Start(int time){
@@ -21,5 +28,6 @@
 
         Console.Clear();
         Console.WriteLine("Stopwatch finalizado!");
+        Thread.Sleep(2500);
     }
 }
